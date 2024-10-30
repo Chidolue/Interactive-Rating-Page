@@ -4,6 +4,7 @@ let thirdButton = document.getElementById("thirdButton");
 let fourthButton = document.getElementById("fourthButton");
 let fifthButton = document.getElementById("fifthButton");
 let submit = document.getElementById("submit");
+let container = document.getElementById("container");
 
 let count1 = 0;
 let count2 = 0;
@@ -81,4 +82,5 @@ fifthButton.addEventListener("click", function() {
 
 submit.addEventListener("click", function() {
     refactor();
+    container.style.display = "none";
 })
