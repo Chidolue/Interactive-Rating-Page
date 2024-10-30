@@ -3,6 +3,7 @@ let secondButton = document.getElementById("secondButton");
 let thirdButton = document.getElementById("thirdButton");
 let fourthButton = document.getElementById("fourthButton");
 let fifthButton = document.getElementById("fifthButton");
+let submit = document.getElementById("submit");
 
 let count1 = 0;
 let count2 = 0;
@@ -76,4 +77,8 @@ fifthButton.addEventListener("click", function() {
         fifthButton.style.backgroundColor = "hsla(217, 12%, 63%, 0.097)";
     }
     count5++;
+})
+
+submit.addEventListener("click", function() {
+    refactor();
 })
