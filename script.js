@@ -5,6 +5,8 @@ let fourthButton = document.getElementById("fourthButton");
 let fifthButton = document.getElementById("fifthButton");
 let submit = document.getElementById("submit");
 let container = document.getElementById("container");
+let num = document.getElementById("num");
+let secondPart = document.getElementById("thank-you");
 
 let count1 = 0;
 let count2 = 0;
@@ -81,6 +83,28 @@ fifthButton.addEventListener("click", function() {
 })
 
 submit.addEventListener("click", function() {
-    refactor();
     container.style.display = "none";
+    secondPart.style.display = "block";
+    
+    if(count1 === 1){
+        num.textContent = 1;
+    }
+
+    else if(count2 === 1){
+        num.textContent = 2;
+    }
+
+    else if(count3 === 1){
+        num.textContent = 3;
+    }
+
+    else if(count4 === 1){
+        num.textContent = 4;
+    }
+
+    else if(count5 === 1){
+        num.textContent = 5;
+    }
+
+    refactor();
 })

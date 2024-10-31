@@ -15,11 +15,14 @@ body {
     align-items: center;
 }
 
+#container{
+    padding: 1.5rem 2.5rem;
+}
+
 #whole {
     background-color: hsl(213, 19%, 18%);
     height: 390px;
     width: 400px;
-    padding: 1.5rem 2.5rem;
     border-radius: 25px;
 }
 
@@ -78,6 +81,34 @@ body {
 
 #fourth button:hover{
     background-color: white;
+}
+
+#thank-you {
+    text-align: center;
+    display: none;
+}
+
+#thank-you img{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#thank-you .orange {
+    background-color: hsl(213, 17%, 23%);
+    color: hsl(25, 97%, 53%);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+#thank-you h1 {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+#thank-you p{
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 567px) {
